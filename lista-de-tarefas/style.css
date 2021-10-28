@@ -1,0 +1,125 @@
+* {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  height: 75vh; 
+  margin-top: 10vh;
+}
+
+.to-do-list {
+  background-color: #4d0083;
+  /* border: 2px solid black; */
+  border-radius: 6px;
+  padding: 2rem;
+  min-width: 400px;
+  height: 100%;
+}
+
+.title {
+  /* border-bottom: 0.05px solid #fff5fb; */
+  color: #6ae9ff;
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.form {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-input,
+.form-button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-input {
+  outline: none;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+/* .form-input:focus {
+  scale: 1.015;
+} */
+
+.form-button {
+  background: #faff5d;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+  color: #4d0083;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 0.25rem;
+}
+
+.form-button:hover {
+  color: #4d0083;
+  background: #7ffa1a;
+  scale: 1.025;
+}
+
+.list {
+  list-style: none;
+  width: 100%;
+  margin-top: 1rem;
+  height: 75%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.task {
+  background-color: #8c4ce6;
+  border-radius: 3px;
+  color: #f0f0f0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.check-button,
+.delete-button {
+  font-weight: 500;
+  color: #2e004f;
+  padding: 0.05rem 0.3rem;
+  border-radius: 3px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+.delete-button {
+  background-color:#ff936c;
+}
+
+.check-button {
+  margin-left: 0.5rem;
+  background-color: #7ffa1a;
+}
+
+/* .content {
+  margin: 0;
+} */
+
+.task.done .content {
+  text-decoration: line-through;
+  font-weight: 400;
+  color: rgb(165, 165, 165);  
+}
+
+
+
+
+
+
