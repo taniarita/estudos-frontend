@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   min-width: 100vw;
-  height: 75vh; 
+  height: 75vh;
   margin-top: 10vh;
 }
 
@@ -23,9 +23,9 @@
 }
 
 .title {
-  /* border-bottom: 0.05px solid #fff5fb; */
+  border-bottom: 0.05px solid #e1fbff;
   color: #6ae9ff;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 800;
   letter-spacing: 0.5px;
 }
@@ -37,6 +37,7 @@
 }
 
 .form-input,
+.form-date-time,
 .form-button {
   padding: 0.5rem;
   font-size: 1rem;
@@ -47,16 +48,26 @@
   background-color: #ffffff;
   border-radius: 3px;
 }
-/* .form-input:focus {
-  scale: 1.015;
-} */
+.form-input:focus {
+  font-weight: 600;
+  color: #4d0083;
+}
+
+.form-date-time {
+  margin-left: 0.25rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4d0083;
+  background-color:#fcf9ff;
+  border-radius: 3px;
+}
 
 .form-button {
-  background: #faff5d;
+  background: #f8ff3b;
   letter-spacing: 0.5px;
   border-radius: 3px;
   color: #4d0083;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
   margin-left: 0.25rem;
@@ -66,6 +77,14 @@
   color: #4d0083;
   background: #7ffa1a;
   scale: 1.025;
+}
+
+.content-data {
+  color: #f6f1d1;
+  display: flex;
+  margin-bottom: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  font-weight: 800;
 }
 
 .list {
@@ -80,7 +99,7 @@
 .task {
   background-color: #8c4ce6;
   border-radius: 3px;
-  color: #f0f0f0;
+  color: #f7f7ff;
   font-size: 1.3rem;
   font-weight: 600;
   display: flex;
@@ -100,26 +119,23 @@
 }
 
 .delete-button {
-  background-color:#ff936c;
+  background-color: #ff936c;
+}
+.delete-button:hover {
+  background-color: red;
 }
 
 .check-button {
   margin-left: 0.5rem;
   background-color: #7ffa1a;
 }
-
-/* .content {
-  margin: 0;
-} */
-
-.task.done .content {
-  text-decoration: line-through;
-  font-weight: 400;
-  color: rgb(165, 165, 165);  
+.check-button:hover {
+  background-color: #f8ff3b;
+  scale: 1.025
 }
 
-
-
-
-
-
+.done .content {
+  text-decoration: line-through;
+  font-weight: 400;
+  color: rgb(165, 165, 165);
+}

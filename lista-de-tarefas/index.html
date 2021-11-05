@@ -16,12 +16,25 @@
   <body>
     <main class="app">
       <section class="to-do-list">
-        
-        <h1 class="title">LISTA DE COMPRAS</h1>
+        <h1 class="title">Lista de Tarefas</h1>
 
         <form class="form" method="post">
-          <input class="form-input" type="text"  name="" id="content" data-form-input required/>
-          <button class="form-button" id="botao" data-form-button>inserir</button>
+          <input
+            class="form-input"
+            type="text"
+            name=""
+            id="content"
+            data-form-input
+          />
+          <input
+            class="form-date-time"
+            placeholder="dd/mm/aaaa"
+            type="datetime-local"
+            data-form-date
+          />
+          <button class="form-button" id="botao" data-form-button>
+            inserir
+          </button>
         </form>
 
         <ul class="list" data-list>
@@ -34,6 +47,7 @@
       </section>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script type="module" src="main.js"></script>
   </body>
 </html>
