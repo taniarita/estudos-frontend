@@ -1,7 +1,7 @@
 /* 
 Conceitos: Classes | atributos | operador new | instancia | Objeto | métodos (encapsulamento)|
 atributo privado _ (convenção da comunidade) | early return | módulos | composição de classes |
-get e set | 
+get e set | Herança | Super e Sobrescrita | Classes Abstratas | Polimorfismo | Interface
 */
 
 import { Cliente } from "./Cliente.js";
